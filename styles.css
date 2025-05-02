@@ -1,0 +1,46 @@
+body { font-family: sans-serif; padding: 1rem; }
+
+
+.seat {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .seat.booked {
+    background-color: #ff4d4f;
+    cursor: not-allowed;
+  }
+  .seat.selected {
+    background-color: #4caf50;
+  }
+  .seat.available:hover {
+    outline: 2px solid #007bff;
+  }
+  
+
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .theme-switch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  

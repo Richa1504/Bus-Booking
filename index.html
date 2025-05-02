@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus Search</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/index.js"></script>
+  <script defer src="js/theme.js"></script>
+</head>
+<body>
+  <label class="theme-switch">
+    <input type="checkbox" id="themeToggle" />
+    <span>🌞 / 🌙</span>
+  </label>
+  <h1>Search for Buses</h1>
+  <form id="searchForm">
+    <input type="text" id="fromLocation" placeholder="From" required />
+    <input type="text" id="toLocation" placeholder="To" required />
+    <input type="date" id="journeyDate" required />
+    <button type="submit">Search</button>
+  </form>
+</body>
+</html>

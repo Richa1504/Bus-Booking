@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking Confirmation</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/confirm.js"></script>
+  <style>
+    .success-box {
+      border: 2px solid green;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      background-color: #e6ffe6;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h2>Booking Confirmed 🎉</h2>
+  <div class="success-box">
+    <p><strong>Passenger:</strong> <span id="passengerName"></span> (<span id="passengerAge"></span>, <span id="passengerGender"></span>)</p>
+    <p><strong>Email:</strong> <span id="passengerEmail"></span></p>
+    <p><strong>Phone:</strong> <span id="passengerPhone"></span></p>
+    <p><strong>Bus:</strong> <span id="busName"></span></p>
+    <p><strong>Seats:</strong> <span id="seatNumbers"></span></p>
+    <p><strong>Total Fare:</strong> ₹<span id="fareAmount"></span></p>
+    <p><strong>Booking Ref:</strong> <span id="bookingRef"></span></p>
+  </div>
+</body>
+</html>
